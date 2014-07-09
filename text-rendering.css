@@ -1,0 +1,33 @@
+/*
+   TEXT RENDERING
+*/
+
+.txtr-auto      { text-rendering: auto; }
+.txtr-speed     { text-rendering: optimizeSpeed; }
+.txtr-legibile  { text-rendering: optimizeLegibility; }
+.txtr-precise   { text-rendering: geometricPrecision; }
+.txtr-i         { text-rendering: inherit; }
+
+@media screen and (min-width: 48em) {
+  .txtr-auto-ns      { text-rendering: auto; }
+  .txtr-speed-ns     { text-rendering: optimizeSpeed; }
+  .txtr-legibile-ns  { text-rendering: optimizeLegibility; }
+  .txtr-precise-ns   { text-rendering: geometricPrecision; }
+  .txtr-i-ns         { text-rendering: inherit; }
+}
+
+@media screen and (min-width:48em) and (max-width: 64em) {
+  .txtr-auto-m      { text-rendering: auto; }
+  .txtr-speed-m     { text-rendering: optimizeSpeed; }
+  .txtr-legibile-m  { text-rendering: optimizeLegibility; }
+  .txtr-precise-m   { text-rendering: geometricPrecision; }
+  .txtr-i-m         { text-rendering: inherit; }
+}
+
+@media screen and (min-width: 64em) {
+  .txtr-auto-l      { text-rendering: auto; }
+  .txtr-speed-l     { text-rendering: optimizeSpeed; }
+  .txtr-legibile-l  { text-rendering: optimizeLegibility; }
+  .txtr-precise-l   { text-rendering: geometricPrecision; }
+  .txtr-i-l         { text-rendering: inherit; }
+}
