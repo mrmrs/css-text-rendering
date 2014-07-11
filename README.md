@@ -25,7 +25,7 @@ or download the css on github and include in your project.
 .txtr-precise   { text-rendering: geometricPrecision; }
 .txtr-i         { text-rendering: inherit; }
 
-@include break(not-small) {
+@media screen and (min-width: 48em) {
   .txtr-auto-ns      { text-rendering: auto; }
   .txtr-speed-ns     { text-rendering: optimizeSpeed; }
   .txtr-legibile-ns  { text-rendering: optimizeLegibility; }
@@ -33,7 +33,7 @@ or download the css on github and include in your project.
   .txtr-i-ns         { text-rendering: inherit; }
 }
 
-@include break(medium) {
+@media screen and (min-width: 48em) and (max-width: 64em) {
   .txtr-auto-m      { text-rendering: auto; }
   .txtr-speed-m     { text-rendering: optimizeSpeed; }
   .txtr-legibile-m  { text-rendering: optimizeLegibility; }
@@ -41,7 +41,7 @@ or download the css on github and include in your project.
   .txtr-i-m         { text-rendering: inherit; }
 }
 
-@include break(large) {
+@media screen and (min-width: 64em)  {
   .txtr-auto-l      { text-rendering: auto; }
   .txtr-speed-l     { text-rendering: optimizeSpeed; }
   .txtr-legibile-l  { text-rendering: optimizeLegibility; }
