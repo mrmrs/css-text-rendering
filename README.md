@@ -20,7 +20,8 @@ View on [npm](https://www.npmjs.org/package/css-text-rendering)
 ## File Size
 
 1.2K text-rendering.css
-969B text-rendering.min.css
+969B text-rendering.min.css 
+229B minified and gzipped
 
 ## The Code
 ```
