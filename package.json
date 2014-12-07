@@ -1,5 +1,6 @@
 {
   "name": "css-text-rendering",
+  "style": "text-rendering.css",
   "version": "0.0.4",
   "homepage": "http://github.com/mrmrs/css-text-rendering",
   "description": "Css module of single purpose classes for text rendering",
