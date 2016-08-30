@@ -30,7 +30,7 @@
   ],
   "license": "MIT",
   "devDependencies": {
-    "tachyons-cli": "^0.3.2"
+    "tachyons-cli": "^1.0.2"
   },
   "scripts": {
     "start": "tachyons src/css-text-rendering.css > css/css-text-rendering.css && tachyons src/css-text-rendering.css --minify > css/css-text-rendering.min.css && tachyons src/css-text-rendering.css --generate-docs --package=../../package.json > readme.md"
