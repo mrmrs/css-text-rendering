@@ -1,7 +1,7 @@
 {
   "name": "css-text-rendering",
   "style": "text-rendering.css",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "homepage": "http://github.com/mrmrs/css-text-rendering",
   "description": "Css module of single purpose classes for text rendering",
   "keywords": [
@@ -30,7 +30,7 @@
   ],
   "license": "MIT",
   "devDependencies": {
-    "tachyons-cli": "^1.0.2"
+    "tachyons-cli": "^1.0.4"
   },
   "scripts": {
     "start": "tachyons src/css-text-rendering.css > css/css-text-rendering.css && tachyons src/css-text-rendering.css --minify > css/css-text-rendering.min.css && tachyons src/css-text-rendering.css --generate-docs --package=../../package.json > readme.md"
