@@ -9,11 +9,11 @@
 .txtr-i         { text-rendering: inherit; }
 
 @media screen and (min-width: 48em) {
-  .txtr-auto-ns      { text-rendering: auto; }
-  .txtr-speed-ns     { text-rendering: optimizeSpeed; }
-  .txtr-legibile-ns  { text-rendering: optimizeLegibility; }
-  .txtr-precise-ns   { text-rendering: geometricPrecision; }
-  .txtr-i-ns         { text-rendering: inherit; }
+  .txtr-auto-s      { text-rendering: auto; }
+  .txtr-speed-s     { text-rendering: optimizeSpeed; }
+  .txtr-legibile-s  { text-rendering: optimizeLegibility; }
+  .txtr-precise-s   { text-rendering: geometricPrecision; }
+  .txtr-i-s         { text-rendering: inherit; }
 }
 
 @media screen and (min-width:48em) and (max-width: 64em) {
