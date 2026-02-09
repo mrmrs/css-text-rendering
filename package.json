@@ -1,38 +1,44 @@
 {
   "name": "css-text-rendering",
-  "style": "text-rendering.css",
-  "version": "1.0.7",
-  "homepage": "http://github.com/mrmrs/css-text-rendering",
-  "description": "Css module of single purpose classes for text rendering",
+  "version": "2.0.0",
+  "description": "Functional CSS for text-rendering",
+  "style": "dist/text-rendering.css",
+  "main": "dist/text-rendering.css",
+  "exports": {
+    ".": "./dist/text-rendering.css",
+    "./dist/*": "./dist/*",
+    "./src/*": "./src/*"
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "scripts": {
+    "build": "node build.js",
+    "prepublishOnly": "npm run build"
+  },
   "keywords": [
     "css",
-    "oocss",
-    "text-rendering"
+    "text-rendering",
+    "utility",
+    "single-purpose",
+    "functional-css"
   ],
-  "css-text-rendering": {
+  "homepage": "https://github.com/mrmrs/css-text-rendering",
+  "repository": {
     "type": "git",
-    "url": "http://github.com/mrmrs/css-text-rendering.git"
+    "url": "https://github.com/mrmrs/css-text-rendering.git"
   },
   "bugs": {
-    "url": "https://github.com/mrmrs/css-text-rendering/issues",
-    "email": "hi@mrmrs.cc"
+    "url": "https://github.com/mrmrs/css-text-rendering/issues"
   },
   "author": {
     "name": "Adam Morse",
     "email": "hi@mrmrs.cc",
     "url": "http://mrmrs.cc"
   },
-  "contributors": [
-    {
-      "name": "Adam Morse",
-      "email": "hi@mrmrs.cc"
-    }
-  ],
-  "license": "MIT",
+  "license": "ISC",
   "devDependencies": {
     "lightningcss": "^1"
-  },
-  "scripts": {
-    "build": "node build.js"
   }
 }
