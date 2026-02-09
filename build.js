@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 const { transform } = require('lightningcss');
 
-const srcFile = path.join(__dirname, 'src', 'css-text-rendering.css');
+const srcFile = path.join(__dirname, 'src', 'text-rendering.css');
 const distDir = path.join(__dirname, 'dist');
 
 // Read source
@@ -15,22 +15,22 @@ if (!fs.existsSync(distDir)) {
 
 // Unminified — just normalize formatting
 const { code: unminified } = transform({
-  filename: 'css-text-rendering.css',
+  filename: 'text-rendering.css',
   code: Buffer.from(source),
   minify: false,
 });
 
-fs.writeFileSync(path.join(distDir, 'css-text-rendering.css'), unminified);
+fs.writeFileSync(path.join(distDir, 'text-rendering.css'), unminified);
 
 // Minified
 const { code: minified } = transform({
-  filename: 'css-text-rendering.css',
+  filename: 'text-rendering.css',
   code: Buffer.from(source),
   minify: true,
 });
 
-fs.writeFileSync(path.join(distDir, 'css-text-rendering.min.css'), minified);
+fs.writeFileSync(path.join(distDir, 'text-rendering.min.css'), minified);
 
 console.log('Build complete:');
-console.log(`  dist/css-text-rendering.css     ${unminified.length} bytes`);
-console.log(`  dist/css-text-rendering.min.css ${minified.length} bytes`);
+console.log(`  dist/text-rendering.css     ${unminified.length} bytes`);
+console.log(`  dist/text-rendering.min.css ${minified.length} bytes`);
